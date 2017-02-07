@@ -1,10 +1,22 @@
-<!-- -------
-when the page loads: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hangman Game</title>
+  <script src="assets/javascript/game.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- //when the page loads: 
 
   create an array of possible words
   secret word is picked by computer randomly out of the array of possible words
   the screen shows a number of blanks equal to the number of letters in secret word
-    - treat string like an array, loop over it, and for each letter, display the following string: "_"
+    - treat string like an array, loop over it, and for each letter, display the following string: "_" -->
+
+<script>
   
   var guessesLeft = 10;
   var losses = 0;
@@ -58,20 +70,9 @@ document.onkeyup = function() {
   }
 }
 
------
+// How to choose random element out of array : 01-17-LM-Class-Content/Tu-Th-Sat-In-Class-Content/03-intro-js-hangman-dom/3.2-02-02-2017/Activities/09-RPS-Coded/rps-9.html, line 31 -->
 
-How to choose random element out of array : 01-17-LM-Class-Content/Tu-Th-Sat-In-Class-Content/03-intro-js-hangman-dom/3.2-02-02-2017/Activities/09-RPS-Coded/rps-9.html, line 31 -->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Hangman Game</title>
-  <script src="assets/javascript/game.js"></script>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
-<body>
+</script>
   
 </body>
 </html>
