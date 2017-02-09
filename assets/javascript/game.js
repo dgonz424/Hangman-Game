@@ -21,8 +21,15 @@
  console.log(previousGuesses)
  // }
  //listen for this event - when a user types a key:
- // document.onkeyup = function() {
- //        var keypressed = event.key;
+document.onkeyup = function(event) {
+var letterGuess = String.fromCharCode(event.keyCode).toLowerCase();
+for (var i = 0; i < secretWord.length; i++) {
+if (letterGuess === secretWord[i]) {
+alert("match!");
+}
+}
+}
+
  // store the key in a variable // letterGuess = String.fromCharCode(event.keyCode).toLowerCase();
  // var letterGuess = String.fromCharCode(event.keyCode).toLowerCase();
  //the user has not guessed this letter already
